@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+body {
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  color: #000;
+  background-color: #FCFCFC;
+}
+
+a {
+  position: relative;
+  color: #F4F1DE;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-color: 1px solid #F4F1DE;
+}
+
+#demo {
+  margin: 3em auto;
+  width: 640px;
+}
+
+[data-sr] {
+  visibility: hidden;
+}
+
+#heart {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  text-indent: -9999px;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: '';
+  left: 20px;
+  top: 0;
+  width: 20px;
+  height: 30px;
+  background: tomato;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.footer {
+  margin: 3em auto 6em;
+  width: 640px;
+}
